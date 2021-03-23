@@ -29,7 +29,7 @@ function createList() {
 createList();
 
 ulRef.addEventListener("click", openModal);
-// buttonRef.addEventListener("click", closeModal);
+buttonRef.addEventListener("click", closeModal);
 
 
 function openModal(event) {
@@ -41,4 +41,10 @@ function openModal(event) {
     modalImgRef.setAttribute("alt", event.target.alt);
   
     modalRef.classList.add("is-open");
+  }
+
+  function closeModal() {
+    modalImgRef.setAttribute("src", "");
+    modalImgRef.setAttribute("alt", "");
+    modalRef.classList.remove("is-open");
   }
