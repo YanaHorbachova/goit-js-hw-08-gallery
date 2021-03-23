@@ -5,7 +5,6 @@ const buttonRef = document.querySelector(
   'button[data-action="close-lightbox"]'
 );
 const modalImgRef = document.querySelector(".lightbox__image");
-const overlayRef = document.querySelector(".lightbox__overlay");
 
 function createList() {
   const liToAdd = [];
