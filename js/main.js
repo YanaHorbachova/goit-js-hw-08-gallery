@@ -36,14 +36,14 @@ function openModal(event) {
     if (event.target.nodeName !== "IMG") {
       return;
     }
-    modalImgRef.setAttribute("src", event.target.dataset.source);
-    modalImgRef.setAttribute("alt", event.target.alt);
+    modalImgRef.setAttribute("src", event.target.dataset.source, "alt", event.target.alt);
+    // modalImgRef.setAttribute("alt", event.target.alt);
   
     modalRef.classList.add("is-open");
   }
 
   function closeModal() {
-    modalImgRef.setAttribute("src", "");
-    modalImgRef.setAttribute("alt", "");
+    modalImgRef.setAttribute("src", "","alt", "");
+    // modalImgRef.setAttribute("alt", "");
     modalRef.classList.remove("is-open");
   }
