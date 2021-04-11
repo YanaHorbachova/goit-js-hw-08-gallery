@@ -51,4 +51,34 @@ function openModal(event) {
     modalImgRef.setAttribute("alt", alt);
     }
     
+    // Дополнительно
+
+    // function modalKeydown(event) {
+    //   if (event.code === "Escape") {
+    //     closeModal();
+    //   }
+    //   if (event.code === "ArrowRight") {
+    //     changeImgByRightArrow(currentIndex);
+    //   }
+    
+    //   if (event.code === "ArrowLeft") {
+    //     changeImgByLeftArrow(currentIndex);
+    //   }
+    // }
+    
+    // function changeImgByRightArrow(index) {
+    //   if (index < images.length - 1) {
+    //     modalImgRef.src = images[index + 1].original;
+    //     modalImgRef.alt = images[index + 1].description;
+    //     currentIndex += 1;
+    //   }
+    // }
+    
+    // function changeImgByLeftArrow(index) {
+    //   if (index > 0) {
+    //     modalImgRef.src = images[index - 1].original;
+    //     modalImgRef.alt = images[index - 1].description;
+    //     currentIndex -= 1;
+    //   }
+    // }
     
